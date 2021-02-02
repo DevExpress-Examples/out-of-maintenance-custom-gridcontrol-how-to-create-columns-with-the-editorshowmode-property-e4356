@@ -29,7 +29,7 @@ namespace ExtendedGridViewSpace
             }
         }
 
-        public override EditorShowMode GetShowEditorMode()
+        public override EditorShowMode GetShowEditorMode(int rowHandle)
         {
             ExtendedGridColumn col = FocusedColumn as ExtendedGridColumn;
             if (col != null)

@@ -26,7 +26,7 @@ Namespace ExtendedGridViewSpace
 			End Get
 		End Property
 
-		Public Overrides Function GetShowEditorMode() As EditorShowMode
+		Public Overrides Function GetShowEditorMode(RowHandle As Integer) As EditorShowMode
 			Dim col As ExtendedGridColumn = TryCast(FocusedColumn, ExtendedGridColumn)
 			If col IsNot Nothing Then
 				Return col.EditorShowMode
