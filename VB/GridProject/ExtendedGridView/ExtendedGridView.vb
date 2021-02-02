@@ -1,5 +1,4 @@
-Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports DevExpress.XtraGrid.Views.Grid
@@ -9,7 +8,7 @@ Imports DevExpress.XtraGrid.Columns
 Imports DevExpress.Utils
 
 Namespace ExtendedGridViewSpace
-	<System.ComponentModel.DesignerCategory("")> _
+	<System.ComponentModel.DesignerCategory("")>
 	Public Class ExtendedGridView
 		Inherits GridView
 
@@ -26,7 +25,7 @@ Namespace ExtendedGridViewSpace
 			End Get
 		End Property
 
-		Public Overrides Function GetShowEditorMode(RowHandle As Integer) As EditorShowMode
+		Public Overrides Function GetShowEditorMode(ByVal rowHandle As Integer) As EditorShowMode
 			Dim col As ExtendedGridColumn = TryCast(FocusedColumn, ExtendedGridColumn)
 			If col IsNot Nothing Then
 				Return col.EditorShowMode

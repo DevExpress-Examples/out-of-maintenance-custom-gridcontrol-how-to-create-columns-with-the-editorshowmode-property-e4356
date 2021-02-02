@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports DevExpress.XtraGrid.Registrator
@@ -9,6 +8,7 @@ Imports DevExpress.XtraGrid
 Namespace ExtendedGridViewSpace
 	Public Class ExtendedGridViewInfoRegistrator
 		Inherits GridInfoRegistrator
+
 		Public Overrides ReadOnly Property ViewName() As String
 			Get
 				Return "ExtendedGridView"

@@ -1,5 +1,4 @@
-﻿Imports Microsoft.VisualBasic
-Imports System
+﻿Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Windows.Forms
@@ -12,11 +11,12 @@ Imports DevExpress.XtraGrid.Views.Base
 Namespace GridProject
 	Partial Public Class Form1
 		Inherits Form
+
 		Public Sub New()
 			InitializeComponent()
 		End Sub
 
-		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles MyBase.Load
+		Private Sub Form1_Load(ByVal sender As Object, ByVal e As EventArgs) Handles Me.Load
 			Dim dh As New DataHelper(DSparametr.simpleDS)
 			extendedGridControl1.DataSource = dh.DataSet
 			extendedGridControl1.DataMember = dh.DataMember
